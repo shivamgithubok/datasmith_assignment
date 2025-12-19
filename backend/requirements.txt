@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pytesseract
+Pillow
+PyPDF2
+SpeechRecognition
+youtube-transcript-api
+openai
+textblob
+python-dotenv
+pydub

@@ -1,0 +1,23 @@
+Architecture Diagram
+
+Frontend (Streamlit)
+    |
+    | HTTP POST /process
+    v
+Backend (FastAPI)
+    |
+    +--> Extract Content (OCR, PDF, STT, YouTube)
+    |
+    +--> Process Query (LLM classify task or clarify)
+    |
+    +--> Perform Task (Summarize, Sentiment, etc.)
+    |
+    +--> Return Response (text-only)
+
+Libraries:
+- pytesseract + Pillow for OCR
+- PyPDF2 for PDF
+- SpeechRecognition for Audio
+- youtube-transcript-api for YouTube
+- OpenRouter for LLM tasks
+- TextBlob for sentiment
